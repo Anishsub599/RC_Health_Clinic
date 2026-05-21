@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <path id="topArc" d="M 60,60 m -47,0 a 47,47 0 0,1 94,0" fill="none"/>
+    <path id="botArc" d="M 60,60 m -44,0 a 44,44 0 1,0 88,0" fill="none"/>
+  </defs>
+
+  <!-- Filled circle background -->
+  <circle cx="60" cy="60" r="58" fill="#0a3052"/>
+  <circle cx="60" cy="60" r="55" fill="none" stroke="#fbbf24" stroke-width="1.4"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#fbbf24" stroke-width="0.7"/>
+
+  <!-- Top curved text: R.C. HEALTH CLINIC -->
+  <text font-family="'Plus Jakarta Sans', Poppins, sans-serif" font-size="9.5" font-weight="800" fill="#fbbf24" letter-spacing="1.2">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">R.C. HEALTH CLINIC</textPath>
+  </text>
+
+  <!-- Bottom curved text: Rambazar-10, Pokhara -->
+  <text font-family="'Plus Jakarta Sans', Poppins, sans-serif" font-size="6.8" font-weight="600" fill="#fbbf24" letter-spacing="0.6">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">Rambazar-10, Pokhara</textPath>
+  </text>
+
+  <!-- Side stars -->
+  <text x="11" y="66" font-size="9" fill="#fbbf24" font-weight="700">★</text>
+  <text x="101" y="66" font-size="9" fill="#fbbf24" font-weight="700" text-anchor="end">★</text>
+
+  <!-- Lotus petals -->
+  <g transform="translate(60,60)">
+    <g fill="#14b8a6">
+      <ellipse cx="0" cy="-7" rx="3" ry="9" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="9" transform="rotate(-32)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="9" transform="rotate(32)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="9" transform="rotate(-62)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="9" transform="rotate(62)"/>
+    </g>
+    <circle cx="0" cy="3" r="2.2" fill="#fbbf24"/>
+  </g>
+</svg>
