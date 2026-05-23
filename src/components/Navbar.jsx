@@ -57,7 +57,7 @@ export default function Navbar() {
             />
             <div className="leading-tight border-l-2 border-slate-100 pl-3">
               <div className="font-display font-extrabold text-brand-900 text-lg md:text-xl tracking-tight">R.C. Health Clinic</div>
-              <div className="text-[11px] md:text-xs text-slate-500 -mt-0.5">Rambazar-10, Pokhara · Regd. No: 9832-070-71</div>
+              <div className="text-[11px] md:text-xs text-slate-500 -mt-0.5">Kiran Gurung Medical सँगै</div>
             </div>
           </a>
 
