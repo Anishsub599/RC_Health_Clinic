@@ -45,7 +45,6 @@ export const packages = [
       'Thyroid Function Test (TFT)',
       'Uric Acid',
       'RA Factor',
-      'Cross Matching',
       'Calcium',
       'HbA1c',
       'CRP',
