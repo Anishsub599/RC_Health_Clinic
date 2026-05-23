@@ -12,7 +12,8 @@ export const LAB = {
   viber: '9779856027074',
   facebookUrl: 'https://facebook.com/',  // TODO: replace with your actual FB page URL
   email: 'rclabpokhara@gmail.com',
-  hours: 'Sun – Fri: 7:00 AM – 8:00 PM  |  Sat: 8:00 AM – 2:00 PM',
+  hours: 'Open Everyday: 6:30 AM – 7:00 PM',
+  hoursNp: 'दैनिक खुल्ला: बिहान ६:३० देखि साँझ ७:०० बजे सम्म',
   // Map embed — search-based fallback that lands at Rambazar, Pokhara.
   // To pin the exact spot: open Google Maps → search your clinic → Share → Embed a map → copy the `src` URL → paste it here.
   mapEmbed: 'https://www.google.com/maps?q=R.C.+Medical+Hall,+Rambazar+10,+Pokhara&output=embed'

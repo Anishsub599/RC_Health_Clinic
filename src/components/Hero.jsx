@@ -38,12 +38,12 @@ const slides = [
     sub: 'Kiran Gurung Medical साँगै, रामबजार, पोखरा-१०। · Located alongside Kiran Gurung Medical, Pokhara-10.'
   },
   {
-    img: '/lab-services.jpg',
+    img: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1600&q=80',
     fit: 'cover',
-    eyebrow: 'Our Services · हाम्रा सेवाहरू',
-    titleNp: '२५+ परीक्षण',
-    titleEn: 'One Package.',
-    sub: 'होल बडी चेकअप मात्र NPR 3,500 बाट सुरु। · Whole Body Checkup from NPR 3,500.'
+    eyebrow: 'Health Packages · स्वास्थ्य प्याकेज',
+    titleNp: 'NPR ५,००० बाट',
+    titleEn: 'Whole Body Checkup.',
+    sub: 'अत्यावश्यक देखि प्रिमियम सम्म — सबै बजेटका लागि प्याकेज। · Essential to Premium packages, every budget covered.'
   }
 ]
 

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaCheck, FaWhatsapp, FaStar } from 'react-icons/fa'
+import { FaCheck, FaWhatsapp, FaStar, FaTag } from 'react-icons/fa'
 import { packages } from '../data/packages.js'
 import { waLink } from '../data/config.js'
 
@@ -10,10 +10,26 @@ export default function Packages() {
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="section-eyebrow">स्वास्थ्य प्याकेज · Health Packages</span>
           <h2 className="section-title">Affordable bundled health checkups</h2>
-          <p className="text-slate-600 mt-4">प्याकेजमा बचत गर्नुहोस् — धेरै परीक्षण, एकै मूल्य, र डाक्टर परामर्श निःशुल्क।</p>
+          <p className="text-slate-600 mt-4">प्याकेजमा बचत गर्नुहोस् — धेरै परीक्षण, एकै मूल्य।</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Walk-in discount banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto mb-10 bg-gradient-to-r from-gold-400/20 to-accent-500/20 border-2 border-dashed border-gold-400 rounded-2xl px-6 py-4 flex items-center gap-4"
+        >
+          <div className="w-12 h-12 rounded-full bg-gold-400 text-brand-900 grid place-items-center text-xl shrink-0">
+            <FaTag />
+          </div>
+          <div className="flex-1">
+            <div className="font-display font-extrabold text-brand-900 text-base md:text-lg">सिधै ल्याबमा आउनुहोस् — २०–३०% छुट!</div>
+            <div className="text-sm text-slate-700">Walk-in to the lab and get <strong>20–30% off</strong> on any package below.</div>
+          </div>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {packages.map((p, i) => (
             <motion.div
               key={p.name}
@@ -30,14 +46,15 @@ export default function Packages() {
               )}
               <div className={`h-1 w-16 rounded-full bg-gradient-to-r ${p.color} mb-5`} />
               <h3 className="font-display font-extrabold text-xl text-brand-900">{p.name}</h3>
-              <p className="text-sm text-slate-500 mb-4">{p.tagline}</p>
+              <p className="text-xs text-brand-700 font-semibold">{p.nameNp}</p>
+              <p className="text-sm text-slate-500 mt-1 mb-4">{p.tagline}</p>
               <div className="font-display text-3xl font-extrabold text-brand-800 mb-1">{p.price}</div>
-              <div className="text-xs text-slate-500 mb-5">One-time, all tests included</div>
+              <div className="text-xs text-slate-500 mb-5">One-time · all tests included</div>
 
-              <ul className="space-y-2.5 mb-6">
+              <ul className="space-y-2 mb-6">
                 {p.includes.map(item => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
-                    <FaCheck className="text-accent-600 mt-1 shrink-0" />
+                  <li key={item} className="flex items-start gap-2 text-sm text-slate-700">
+                    <FaCheck className="text-accent-600 mt-1 shrink-0 text-xs" />
                     <span>{item}</span>
                   </li>
                 ))}
